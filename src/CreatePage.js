@@ -3,7 +3,7 @@ import { createRestaurant } from './services/fetch-utils';
 import { useHistory } from 'react-router-dom';
 
 export default function CreatePage() {
-  const history = useHistory();
+  const { push } = useHistory();
   const [Name, setName] = useState('');
   const [Genre, setGenre] = useState('');
   const [Price, setPrice] = useState('');
@@ -20,7 +20,7 @@ export default function CreatePage() {
       Atmosphere,
     });
 
-    history.push('/restaurants');
+    push('/restaurants');
   }
 
   return (
@@ -29,7 +29,7 @@ export default function CreatePage() {
         <h2>Add restaurant</h2>
         <label>
             Restaurant Name
-          <input required name='name' onChange={e => setName(e.target.value)}/>
+          <input required name='Name' onChange={e => setName(e.target.value)}/>
         </label>
         <label>
             Restaurant Genre
@@ -45,11 +45,11 @@ export default function CreatePage() {
         </label>
         <label>
             Restaurant Price
-          <input required name='price' onChange={e => setPrice(e.target.value)}/>
+          <input required name='Price' onChange={e => setPrice(e.target.value)}/>
         </label>
         <label>
             Restaurant Seating Size (ex: large, small, spacious etc)
-          <input required name='size' onChange={e => setSize(e.target.value)}/>
+          <input required name='Size' onChange={e => setSize(e.target.value)}/>
         </label>
         <label>
             Dining Mood
