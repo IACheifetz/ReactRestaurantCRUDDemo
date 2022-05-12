@@ -30,6 +30,14 @@ export async function createRestaurant(restaurant){
   return checkError(response);
 }
 
+export async function updateRestaurant(restaurant){
+  const response = await client
+    .from('Restaurants')
+    .update([restaurant]);
+  
+  return checkError(response);
+}
+
 export async function getRestaurants(){
   const response = await client
     .from('Restaurants')

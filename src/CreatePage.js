@@ -47,7 +47,7 @@ export default function CreatePage() {
           <input required name='price' onChange={e => setPrice(e.target.value)}/>
         </label>
         <label>
-            Seating Availability
+            Restaurant Seating Size (ex: large, small, spacious etc)
           <input required name='size' onChange={e => setSize(e.target.value)}/>
         </label>
         <label>
