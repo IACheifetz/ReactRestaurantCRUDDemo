@@ -44,6 +44,7 @@ export default function CreatePage() {
           </select>
         </label>
         <label>
+            Restaurant Price
           <input required name='price' onChange={e => setPrice(e.target.value)}/>
         </label>
         <label>
@@ -51,6 +52,7 @@ export default function CreatePage() {
           <input required name='size' onChange={e => setSize(e.target.value)}/>
         </label>
         <label>
+            Dining Mood
           <input required name='Atmosphere' onChange={e => setAtmosphere(e.target.value)}/>
         </label>
         <button>Create Restaurant</button>
