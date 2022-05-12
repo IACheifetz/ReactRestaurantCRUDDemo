@@ -46,7 +46,7 @@ export default function DetailPage() {
         <h2>Update restaurant</h2>
         <label>
             Restaurant Name
-          <input required name='name' onChange={e => setName(e.target.value)}/>
+          <input required name='Name' onChange={e => setName(e.target.value)}/>
         </label>
         <label>
             Restaurant Genre
@@ -61,13 +61,15 @@ export default function DetailPage() {
           </select>
         </label>
         <label>
-          <input required name='price' onChange={e => setPrice(e.target.value)}/>
+            Restaurant Price
+          <input required name='Price' onChange={e => setPrice(e.target.value)}/>
         </label>
         <label>
             Restaurant Seating Size (ex: large, small, spacious etc)
-          <input required name='size' onChange={e => setSize(e.target.value)}/>
+          <input required name='Size' onChange={e => setSize(e.target.value)}/>
         </label>
         <label>
+            Dining Mood
           <input required name='Atmosphere' onChange={e => setAtmosphere(e.target.value)}/>
         </label>
         <button>Create Restaurant</button>
